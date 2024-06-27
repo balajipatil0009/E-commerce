@@ -1,0 +1,14 @@
+<div class="bg-white w-[98%]">
+  <p class="text-xl font-bold p-8">Best of Electronics</p>
+  <div id="products" class="flex justify-evenly w-full">
+    @for (item of data; track $index) {
+    <div class="border rounded-lg w-[180px] h-[220px] pt-3">
+      <div class="h-[70%] w-full flex justify-center items-center">
+        <img src="{{ item.img }}" alt="" class="max-w-[97%] max-h-[100%]" />
+      </div>
+      <p class="p-0 m-0 text-center">{{ item.tagline }}</p>
+      <p class="p-0 m-0 text-center font-bold">{{ item.offer }}</p>
+    </div>
+    }
+  </div>
+</div>

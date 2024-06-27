@@ -1,4 +1,58 @@
-<div class="min-h-[100vh] bg-gray-200">
-  <app-navbar></app-navbar>
+<div class="bg-gray-200">
+  <app-navbar class="fixed z-10 top-0"></app-navbar>
+  <div id="catagory" class="flex justify-evenly mt-[10vh] bg-white p-3">
+    <div>
+      <img class="h-[60px]" src="grocery.webp" alt="grocery" />
+      <p class="text-center">Grocery</p>
+    </div>
+    <div>
+      <img class="h-[60px]" src="grocery.webp" alt="grocery" />
+      <p class="text-center">Grocery</p>
+    </div>
+    <div>
+      <img class="h-[60px]" src="grocery.webp" alt="grocery" />
+      <p class="text-center">Grocery</p>
+    </div>
+    <div>
+      <img class="h-[60px]" src="grocery.webp" alt="grocery" />
+      <p class="text-center">Grocery</p>
+    </div>
+    <div>
+      <img class="h-[60px]" src="grocery.webp" alt="grocery" />
+      <p class="text-center">Grocery</p>
+    </div>
+    <div>
+      <img class="h-[60px]" src="grocery.webp" alt="grocery" />
+      <p class="text-center">Grocery</p>
+    </div>
+    <div>
+      <img class="h-[60px]" src="grocery.webp" alt="grocery" />
+      <p class="text-center">Grocery</p>
+    </div>
+    <div>
+      <img class="h-[60px]" src="grocery.webp" alt="grocery" />
+      <p class="text-center">Grocery</p>
+    </div>
+    <div>
+      <img class="h-[60px]" src="grocery.webp" alt="grocery" />
+      <p class="text-center">Grocery</p>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <div
+      id="sclider"
+      class="w-[97vw] h-[35vh] bg-white flex justify-between items-center bg-[url('/flights.webp')] mt-4"
+    >
+      <i
+        class="fa-solid fa-chevron-left px-3 py-9 border rounded-r-md bg-white"
+      ></i>
+      <i
+        class="fa-solid fa-chevron-right px-3 py-9 border rounded-l-md bg-white"
+      ></i>
+    </div>
+  </div>
+
+  <app-products class="w-[100%] flex justify-center my-6"></app-products>
 </div>
+
 <router-outlet />
